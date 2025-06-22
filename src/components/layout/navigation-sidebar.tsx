@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, memo, useEffect } from "react";
+import { useState, memo, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
@@ -126,7 +126,7 @@ export function NavigationSidebar({
   const pathname = usePathname();
 
   // Find current category based on pathname
-  const getCurrentCategory = () => {
+  const getCurrentCategory = useCallback(() => {
     // Remove leading slash and get first segment
     const pathSegments = pathname.split("/").filter(Boolean);
     if (pathSegments.length === 0) return null;
@@ -134,7 +134,7 @@ export function NavigationSidebar({
     // Find category that matches the first path segment
     const currentCategoryId = pathSegments[0];
     return categories.find((cat) => cat.id === currentCategoryId)?.id || null;
-  };
+  }, [pathname, categories]);
 
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     () => {

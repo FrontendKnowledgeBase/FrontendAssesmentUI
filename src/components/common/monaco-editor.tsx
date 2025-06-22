@@ -47,6 +47,7 @@ export function MonacoEditor({
 
         // Настраиваем воркеры
         window.MonacoEnvironment = {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           getWorkerUrl: function (_workerId: string, _label: string) {
             return `data:text/javascript;charset=utf-8,${encodeURIComponent(`
               self.MonacoEnvironment = {

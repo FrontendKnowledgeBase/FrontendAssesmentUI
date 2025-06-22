@@ -72,11 +72,11 @@ class GitHubService {
       } else {
         return [response.data as GitHubFile];
       }
-    }).catch((error: any) => {
+    }).catch((error: unknown) => {
       console.error("Error fetching repository structure:", error);
-
+      const err = error as { status?: number; message?: string };
       // Handle rate limiting gracefully
-      if (error.status === 403 && error.message?.includes("rate limit")) {
+      if (err.status === 403 && err.message?.includes("rate limit")) {
         console.warn(
           "GitHub API rate limit exceeded. Returning fallback structure."
         );
@@ -159,11 +159,11 @@ class GitHubService {
       } else {
         throw new Error("File content not found");
       }
-    }).catch((error: any) => {
+    }).catch((error: unknown) => {
       console.error(`Error fetching file content for ${path}:`, error);
-
+      const err = error as { status?: number; message?: string };
       // Handle rate limiting gracefully
-      if (error.status === 403 && error.message?.includes("rate limit")) {
+      if (err.status === 403 && err.message?.includes("rate limit")) {
         console.warn(
           `GitHub API rate limit exceeded. Returning fallback content for ${path}`
         );
