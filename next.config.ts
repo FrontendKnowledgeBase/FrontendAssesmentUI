@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/FrontendAssessmentUI",
-  assetPrefix: "/FrontendAssessmentUI/",
+  basePath: "/FrontendAssesmentUI",
   output: "export",
   images: {
     unoptimized: true,
