@@ -1,0 +1,483 @@
+
+> knowledgedocs@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.0.21:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1166ms
+ ○ Compiling / ...
+ ✓ Compiled / in 6.1s
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles?ref=main - 403 with id 9B68:52D4A:31F65B3:6310757:68570324 in 266ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F65B3:6310757:68570324 and timestamp 2025-06-21 19:08:20 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F65B3:6310757:68570324 and timestamp 2025-06-21 19:08:20 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getAllCategories (src/lib/github.ts:265:24)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+ GET / 200 in 6795ms
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F1_html_css?ref=main - 403 with id 9B68:52D4A:31F667D:63108CC:68570324 in 41ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F667D:63108CC:68570324 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F667D:63108CC:68570324 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F2_javascript?ref=main - 403 with id 9B68:52D4A:31F66B5:6310938:68570325 in 41ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F66B5:6310938:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F66B5:6310938:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F3_react?ref=main - 403 with id 9B68:52D4A:31F66DD:6310999:68570325 in 47ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F66DD:6310999:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F66DD:6310999:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/README.md?ref=main - 403 with id 9B68:52D4A:31F6708:63109E4:68570325 in 49ms
+Error fetching file content for README.md: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F6708:63109E4:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID 9B68:52D4A:31F6708:63109E4:68570325 and timestamp 2025-06-21 19:08:21 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getFileContent (src/lib/github.ts:99:23)
+    at async GitHubService.getMainReadme (src/lib/github.ts:314:22)
+    at async HomeContent (src/app/page.tsx:15:19)
+   97 |   async getFileContent(path: string): Promise<string> {
+   98 |     try {
+>  99 |       const response = await this.octokit.rest.repos.getContent({
+      |                       ^
+  100 |         owner: this.owner,
+  101 |         repo: this.repo,
+  102 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback content for README.md
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles?ref=main - 403 with id D398:3BE554:3EF95E9:7C98578:68570336 in 93ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF95E9:7C98578:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF95E9:7C98578:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getAllCategories (src/lib/github.ts:265:24)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F1_html_css?ref=main - 403 with id D398:3BE554:3EF9611:7C985C6:68570336 in 52ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9611:7C985C6:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9611:7C985C6:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F2_javascript?ref=main - 403 with id D398:3BE554:3EF9646:7C98621:68570336 in 46ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9646:7C98621:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9646:7C98621:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F3_react?ref=main - 403 with id D398:3BE554:3EF9679:7C9867E:68570336 in 58ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9679:7C9867E:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF9679:7C9867E:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/README.md?ref=main - 403 with id D398:3BE554:3EF96AB:7C986E1:68570336 in 37ms
+Error fetching file content for README.md: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF96AB:7C986E1:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EF96AB:7C986E1:68570336 and timestamp 2025-06-21 19:08:38 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getFileContent (src/lib/github.ts:99:23)
+    at async GitHubService.getMainReadme (src/lib/github.ts:314:22)
+    at async HomeContent (src/app/page.tsx:15:19)
+   97 |   async getFileContent(path: string): Promise<string> {
+   98 |     try {
+>  99 |       const response = await this.octokit.rest.repos.getContent({
+      |                       ^
+  100 |         owner: this.owner,
+  101 |         repo: this.repo,
+  102 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback content for README.md
+ GET / 200 in 429ms
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles?ref=main - 403 with id D398:3BE554:3EFA4E0:7C9A2FF:68570336 in 95ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA4E0:7C9A2FF:68570336 and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA4E0:7C9A2FF:68570336 and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getAllCategories (src/lib/github.ts:265:24)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F1_html_css?ref=main - 403 with id D398:3BE554:3EFA540:7C9A3C1:6857033A in 40ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA540:7C9A3C1:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA540:7C9A3C1:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F2_javascript?ref=main - 403 with id D398:3BE554:3EFA561:7C9A420:6857033A in 66ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA561:7C9A420:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA561:7C9A420:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F3_react?ref=main - 403 with id D398:3BE554:3EFA5B8:7C9A4B0:6857033A in 39ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA5B8:7C9A4B0:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA5B8:7C9A4B0:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/README.md?ref=main - 403 with id D398:3BE554:3EFA5DF:7C9A513:6857033A in 39ms
+Error fetching file content for README.md: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA5DF:7C9A513:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID D398:3BE554:3EFA5DF:7C9A513:6857033A and timestamp 2025-06-21 19:08:42 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getFileContent (src/lib/github.ts:99:23)
+    at async GitHubService.getMainReadme (src/lib/github.ts:314:22)
+    at async HomeContent (src/app/page.tsx:15:19)
+   97 |   async getFileContent(path: string): Promise<string> {
+   98 |     try {
+>  99 |       const response = await this.octokit.rest.repos.getContent({
+      |                       ^
+  100 |         owner: this.owner,
+  101 |         repo: this.repo,
+  102 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback content for README.md
+ GET / 200 in 457ms
+ HEAD / 200 in 84ms
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles?ref=main - 403 with id C5FC:1DDBDD:3DF1C55:7A8B43A:68570358 in 163ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1C55:7A8B43A:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1C55:7A8B43A:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getAllCategories (src/lib/github.ts:265:24)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles?ref=main - 403 with id C35A:3EC147:614038B:C13713E:68570358 in 105ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:614038B:C13713E:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:614038B:C13713E:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getAllCategories (src/lib/github.ts:265:24)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F1_html_css?ref=main - 403 with id C5FC:1DDBDD:3DF1CC2:7A8B500:68570358 in 44ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1CC2:7A8B500:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1CC2:7A8B500:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F2_javascript?ref=main - 403 with id C5FC:1DDBDD:3DF1CE8:7A8B558:68570358 in 42ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1CE8:7A8B558:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1CE8:7A8B558:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F1_html_css?ref=main - 403 with id C35A:3EC147:61403B8:C1371B2:68570358 in 62ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:61403B8:C1371B2:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:61403B8:C1371B2:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F3_react?ref=main - 403 with id C5FC:1DDBDD:3DF1D0C:7A8B5A5:68570358 in 47ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D0C:7A8B5A5:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D0C:7A8B5A5:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F2_javascript?ref=main - 403 with id C35A:3EC147:6140404:C137233:68570358 in 49ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:6140404:C137233:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:6140404:C137233:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/README.md?ref=main - 403 with id C5FC:1DDBDD:3DF1D3C:7A8B603:68570358 in 41ms
+Error fetching file content for README.md: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D3C:7A8B603:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D3C:7A8B603:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getFileContent (src/lib/github.ts:99:23)
+    at async GitHubService.getMainReadme (src/lib/github.ts:314:22)
+    at async HomeContent (src/app/page.tsx:15:19)
+   97 |   async getFileContent(path: string): Promise<string> {
+   98 |     try {
+>  99 |       const response = await this.octokit.rest.repos.getContent({
+      |                       ^
+  100 |         owner: this.owner,
+  101 |         repo: this.repo,
+  102 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback content for README.md
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/articles%2F3_react?ref=main - 403 with id C35A:3EC147:6140433:C137292:68570358 in 99ms
+Error fetching repository structure: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:6140433:C137292:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C35A:3EC147:6140433:C137292:68570358 and timestamp 2025-06-21 19:09:12 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getRepositoryStructure (src/lib/github.ts:25:23)
+    at async GitHubService.getCategoryArticles (src/lib/github.ts:235:20)
+    at async GitHubService.getAllCategories (src/lib/github.ts:272:27)
+    at async HomeContent (src/app/page.tsx:12:23)
+  23 |   async getRepositoryStructure(path: string = 'articles'): Promise<GitHubFile[]> {
+  24 |     try {
+> 25 |       const response = await this.octokit.rest.repos.getContent({
+     |                       ^
+  26 |         owner: this.owner,
+  27 |         repo: this.repo,
+  28 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback structure.
+GET /repos/FrontendKnowledgeBase/FrontendCompetencies/contents/README.md?ref=main - 403 with id C5FC:1DDBDD:3DF1D96:7A8B6B6:68570358 in 61ms
+Error fetching file content for README.md: Error [HttpError]: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D96:7A8B6B6:68570358 and timestamp 2025-06-21 19:09:13 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api
+    at <unknown> (HttpError: API rate limit exceeded for user ID 16775047. If you reach out to GitHub Support for help, please include the request ID C5FC:1DDBDD:3DF1D96:7A8B6B6:68570358 and timestamp 2025-06-21 19:09:13 UTC. - https://docs.github.com/rest/overview/rate-limits-for-the-rest-api)
+    at async GitHubService.getFileContent (src/lib/github.ts:99:23)
+    at async GitHubService.getMainReadme (src/lib/github.ts:314:22)
+    at async HomeContent (src/app/page.tsx:15:19)
+   97 |   async getFileContent(path: string): Promise<string> {
+   98 |     try {
+>  99 |       const response = await this.octokit.rest.repos.getContent({
+      |                       ^
+  100 |         owner: this.owner,
+  101 |         repo: this.repo,
+  102 |         path: path, {
+  status: 403,
+  request: [Object],
+  response: [Object]
+}
+GitHub API rate limit exceeded. Returning fallback content for README.md
+ GET / 200 in 528ms

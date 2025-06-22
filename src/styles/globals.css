@@ -1,0 +1,35 @@
+/* Force text truncation with ellipsis */
+.force-truncate {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  word-wrap: normal !important;
+  word-break: normal !important;
+  text-wrap: nowrap !important;
+}
+
+.force-truncate-container {
+  overflow: hidden !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* More specific selector for table of contents */
+.table-of-contents .force-truncate {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  word-wrap: normal !important;
+  word-break: normal !important;
+  text-wrap: nowrap !important;
+  flex-shrink: 1 !important;
+} 
