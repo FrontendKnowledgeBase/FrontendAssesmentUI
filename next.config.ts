@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   basePath: "/FrontendAssessmentUI",
+  assetPrefix: "/FrontendAssessmentUI/",
   output: "export",
   images: {
     unoptimized: true,
