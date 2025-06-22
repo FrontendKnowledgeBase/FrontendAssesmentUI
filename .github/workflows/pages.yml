@@ -25,6 +25,15 @@ jobs:
         run: bun install
 
       - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: FrontendKnowledgeBase
+          GITHUB_REPO: FrontendCompetencies
+          GITHUB_BRANCH: main
+          NEXT_PUBLIC_APP_NAME: "Frontend Assesment"
+          NEXT_PUBLIC_APP_DESCRIPTION: "База знаний по фронтенду"
+          NEXT_PUBLIC_GITHUB_OWNER: FrontendKnowledgeBase
+          NEXT_PUBLIC_GITHUB_REPO: FrontendCompetencies
         run: bun run build
 
       - name: Create .nojekyll file
