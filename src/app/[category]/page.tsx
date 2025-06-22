@@ -2,9 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { MainLayout } from "@/components/layout/main-layout";
 import { githubService } from "@/lib/github";
-import { processMarkdownContent } from "@/lib/markdown";
-import { Button } from "@/components/ui/button";
-import { Edit, ArrowRight, FileText } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import Link from "next/link";
 
 // Function to get correct plural form for Russian "статья"

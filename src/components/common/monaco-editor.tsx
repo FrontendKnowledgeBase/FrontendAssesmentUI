@@ -47,7 +47,7 @@ export function MonacoEditor({
 
         // Настраиваем воркеры
         window.MonacoEnvironment = {
-          getWorkerUrl: function (workerId: string, label: string) {
+          getWorkerUrl: function (_workerId: string, _label: string) {
             return `data:text/javascript;charset=utf-8,${encodeURIComponent(`
               self.MonacoEnvironment = {
                 baseUrl: '${window.location.origin}/_next/static/chunks/'
@@ -101,7 +101,7 @@ export function MonacoEditor({
     return () => {
       editorInstance.dispose();
     };
-  }, [monaco, code, language, readOnly, onChange]);
+  }, [monaco, code, language, readOnly, onChange, theme]);
 
   // Обновляем тему при изменении
   useEffect(() => {

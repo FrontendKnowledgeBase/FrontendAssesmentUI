@@ -3,7 +3,7 @@ import { GitHubFile, GitHubContent, Article, Category } from "@/types";
 import matter from "gray-matter";
 
 // Simple in-memory cache
-const cache = new Map<string, { data: any; timestamp: number }>();
+const cache = new Map<string, { data: unknown; timestamp: number }>();
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
 class GitHubService {
@@ -33,7 +33,7 @@ class GitHubService {
 
     if (cached && now - cached.timestamp < CACHE_DURATION) {
       console.log(`Cache hit for ${key}`);
-      return cached.data;
+      return cached.data as T;
     }
 
     try {
@@ -45,7 +45,7 @@ class GitHubService {
       // If API fails but we have stale cache, use it
       if (cached) {
         console.log(`API failed for ${key}, using stale cache`);
-        return cached.data;
+        return cached.data as T;
       }
       throw error;
     }
@@ -179,8 +179,6 @@ class GitHubService {
    */
   private getDefaultContentForEmptyFile(path: string): string {
     const fileName = path.split("/").pop()?.replace(".md", "") || "Article";
-    const pathParts = path.split("/");
-    const categoryPath = pathParts[pathParts.length - 2];
 
     // Check if this is a main category file (starts with 0_)
     if (fileName.startsWith("0_")) {

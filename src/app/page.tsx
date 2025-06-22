@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { MainLayout } from "@/components/layout/main-layout";
 import { githubService } from "@/lib/github";
-import { processMarkdownContent } from "@/lib/markdown";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Github, ArrowRight } from "lucide-react";
 import Link from "next/link";

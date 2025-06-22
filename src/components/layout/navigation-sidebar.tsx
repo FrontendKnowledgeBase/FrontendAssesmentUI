@@ -153,7 +153,7 @@ export function NavigationSidebar({
         return newExpanded;
       });
     }
-  }, [pathname, categories]);
+  }, [pathname, categories, getCurrentCategory]);
 
   const toggleCategory = (categoryId: string) => {
     setExpandedCategories((prev) => {
