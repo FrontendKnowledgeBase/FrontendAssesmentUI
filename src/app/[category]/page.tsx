@@ -5,6 +5,14 @@ import { githubService } from "@/lib/github";
 import { ArrowRight, FileText } from "lucide-react";
 import Link from "next/link";
 
+export async function generateStaticParams() {
+  const categories = await githubService.getAllCategories();
+
+  return categories.map((category) => ({
+    category: category.id,
+  }));
+}
+
 // Function to get correct plural form for Russian "статья"
 function getArticleCountText(count: number): string {
   const lastDigit = count % 10;

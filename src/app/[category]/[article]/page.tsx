@@ -9,6 +9,19 @@ import { Separator } from "@/components/ui/separator";
 import { Edit, ArrowLeft, ArrowRight, Calendar } from "lucide-react";
 import Link from "next/link";
 
+export async function generateStaticParams() {
+  const categories = await githubService.getAllCategories();
+
+  const paths = categories.flatMap((category) =>
+    category.articles.map((article) => ({
+      category: category.id,
+      article: article.id,
+    }))
+  );
+
+  return paths;
+}
+
 interface ArticlePageProps {
   params: Promise<{
     category: string;
